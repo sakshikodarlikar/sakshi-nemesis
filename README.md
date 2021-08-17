@@ -2,7 +2,9 @@
 
 Code Deployed on Heroku - https://sakshi-nemesis.herokuapp.com/
 
-=======================================================================================================================
+
+=======================================================================================
+
  Screen 1: Login Form
 1.Email (Input)
 2.Password (Input)
@@ -21,4 +23,5 @@ Screen 3: User Detail Page
 4.On delete user details will be deleted
 5.Logout option
 Note:- User authentication will be through JWT token and Session Should expire in 5 min.
+
 =======================================================================================================================
