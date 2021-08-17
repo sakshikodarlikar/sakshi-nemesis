@@ -1,0 +1,13 @@
+  
+{% extends 'main/base.html'%}
+{% block title%}
+Update
+{% endblock %}
+{% block body%}
+<form action="{% url 'user_update' user.user.email %}" method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit">
+</form>
+<a href="{%url 'user_details'%}">User Details</a>
+{% endblock %}

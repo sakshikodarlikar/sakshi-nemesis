@@ -1,0 +1,30 @@
+  
+{% extends 'main/base.html'%}
+{% block title%}
+
+{% endblock %}
+{% block body%}
+
+{{ request.user.username}}
+
+<table>
+    <tr>
+        <td>Username</td>
+        <td>Email</td>
+        <td>Address</td>
+    </tr>
+    {% for user in user_details %}
+    <tr>
+        <td>{{ user.user.username }}</td>
+        <td>{{ user.user.email }}</td>
+        <td>{{ user.address }}</td>
+        <td><a href={% url 'user_update' user.user.email %}>Update</a></td>
+        <td><a href={% url 'user_delete' user.user.email %}>Delete</a></td>
+    </tr>
+    
+    {% endfor %}
+</table>
+
+<a href="{%url 'logout'%}">Logout</a>
+
+{% endblock %}

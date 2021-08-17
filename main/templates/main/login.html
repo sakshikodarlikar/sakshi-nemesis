@@ -1,0 +1,15 @@
+{% extends 'main/base.html'%}
+
+{% block title%}
+Login
+{% endblock %}
+{% block body%}
+<form action="{% url 'login' %}" method="POST">
+{% csrf_token %}
+<input type="email" name="email" placeholder="email">
+<input type="password" name="password" placeholder="Password">
+<input type="submit">
+</form>
+<a href="{%url 'signup'%}">Sign up</a>
+
+{% endblock %}
