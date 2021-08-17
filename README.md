@@ -47,7 +47,6 @@ All the above objectives completed.
 - ```https://sakshi-nemesis.herokuapp.com/signup/``` enter Username, Email, Password, Confirm Password, Address and click on the submit button to singup.
 
 
-
 - ```https://sakshi-nemesis.herokuapp.com/login/``` login with email and password and click on login button 
 
 
@@ -58,5 +57,12 @@ The User Details page consists of 'update' and 'delete' link helps to update and
 
 - ```https://sakshi-nemesis.herokuapp.com/logout/``` helps to logout from the account.
 
-### 
 
+
+### JWT Authentication
+
+When you login a JWT session token is created for 5 minutes.
+
+All the other login required pages check for this token validity and availability.
+
+When you click on logout your current session JWT authentication token is deleted.
