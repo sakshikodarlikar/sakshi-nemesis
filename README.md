@@ -31,3 +31,32 @@ Screen 3: User Detail Page
 Note:- User authentication will be through JWT token and Session Should expire in 5 min.
 
 =======================================================================================
+
+
+All the above objectives completed.
+
+
+
+## How to Use and Test this Application on your computer
+- run ```pip install -r requirements.txt```  in your shell to install the specified packages with the specified version.
+- run the app ```python manage.py runserver```
+
+
+## How to run this application
+
+- ```https://sakshi-nemesis.herokuapp.com/signup/``` enter Username, Email, Password, Confirm Password, Address and click on the submit button to singup.
+
+
+
+- ```https://sakshi-nemesis.herokuapp.com/login/``` login with email and password and click on login button 
+
+
+- ```https://sakshi-nemesis.herokuapp.com/user_details/``` shows your username and the table contains user details from the User Model
+
+The User Details page consists of 'update' and 'delete' link helps to update and delete the user. The update link redirects to ``` https://sakshi-nemesis.herokuapp.com/user_update/<str:email>/ ``` where updation of the user details take place.
+
+
+- ```https://sakshi-nemesis.herokuapp.com/logout/``` helps to logout from the account.
+
+### 
+
